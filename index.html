@@ -1,0 +1,227 @@
+<head>
+    <title>Responsive Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body id="bodyScroll">
+    <!-- Nav Section -->
+    <div id="divOverlay" onclick="closeNav()"></div>
+    <header>
+        <nav>
+            <div class="topnav">
+                <ul>
+                    <li>
+                        <a href="#about">Over mij</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li id="cv">
+                        <a href="images/cv.pdf" target="_blank" rel="noopener noreferrer"> CV <a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class=sidenav-header>
+        <div class="menu-btn" onclick="openNav()">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <div class="sidenav" id="mySidenav">
+            <a href="#about" onclick="closeNav()">01. <p>Over mij</p></a>
+            <a href="#experience" onclick="closeNav()">02. <p>Experience</p></a>
+            <a href="#projects" onclick="closeNav()">03. <p>projecten</p></a>
+            <a href="#contact" onclick="closeNav()">04. <p>Contact</p></a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <p id="CV_button">CV</p>
+            </a>
+        </div>
+    </div>
+    <a class="contact_sidelink" href="#contact"> Contacteer mij! </a>
+    <div class="content">
+        <!-- Intro Section -->
+        <div class="hero__section">
+            <div class="hero__wrapper">
+                <div class="column__left">
+                    <p id="hello">Hallo, mijn naam is</p>
+                    <h1>Nadir Aabid.</h1>
+                    <p>Ik ben een software-developer.</p>
+                </div>
+                <div class="column__right"></div>
+            </div>
+        </div>
+        <!-- Over Mij Section -->
+        <div id="about" class="about-me">
+            <div>
+                <h1 class="subt">About Me</h1>
+                <div>
+                    <p>Als 16-jarige jongen ben ik buitengewoon ambitieus en vastberaden om mijn doelen te
+                        verwezenlijken. Ik werk hard en ben vastbesloten om mijn dromen te bereiken. Ik stel duidelijke
+                        doelen en blijf leergierig om mijn vaardigheden te verbeteren. Mijn doorzettingsvermogen en
+                        discipline zijn mijn troeven, en ik weet dat ik obstakels kan overwinnen. Ik omring me met
+                        inspirerende mensen, blijf flexibel en ben bereid om te leren van mijn fouten. Mijn toekomst
+                        ligt voor me, en ik ben vastbesloten om mijn ambitie te blijven volgen.</p>
+
+                    <ul class="skills">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+
+                    </ul>
+                </div>
+                <div class="picture-section">
+                    <div class="picture-container">
+                        <img class="portrait" src="images/portret.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <div id="projects" class="project_section">
+            <h1 class="subt">Projecten</h1>
+            <div class="carousel_container">
+                <div class="carousel">
+                    <div class="item">
+                        <a href="../Technowire">
+                            <div class="item_title">
+                                <h1>TechnoWire</h1>
+                            </div>
+                            <div class="item_content">
+                                <div class="project_skills">
+                                    <h3>Taal:</h3>
+                                    <ul>
+                                        <li><img
+                                                src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg">
+                                        </li>
+                                        <li><img
+                                                src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="project_description">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="../penaltyshoutout">
+                            <div class="item_title">
+                                <h1>Penalty Shoutout</h1>
+                            </div>
+                            <div class="item_content">
+                                <div class="project_skills">
+                                    <h3>Talen:</h3>
+                                    <ul>
+                                        <li><img
+                                                src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg">
+                                        </li>
+                                        <li><img
+                                                src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg">
+                                        </li>
+                                        <li><img
+                                                src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/javascript.svg">
+                                        </li>
+
+                                </div>
+                                <div class="project_description">
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_title">
+                            <h1>Gastenboek</h1>
+                        </div>
+                        <div class="item_content">
+                            <div class="project_skills">
+                                <h3>Talen:</h3>
+                                <ul>
+                                    <li><img
+                                            src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg">
+                                    </li>
+                                    <li><img
+                                            src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg">
+                                    </li>
+                                    <li><img
+                                            src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/python.svg">
+                                    </li>
+                            </div>
+                            <div class="project_description">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="contact_section">
+            <h1 class="subt">Contacteer mij</h1>
+            <div class="contact_container">
+                <div class="screen">
+                    <div class="screen-body">
+                        <div class="screen-body-item left">
+                            <div class="app-title">
+                                <span>Zeg</span>
+                                <span>Hallo</span>
+                            </div>
+                            <div class="socials">
+                                <a href="https://www.linkedin.com/in/nadir-aabid-923035262/" target="_blank"
+                                    rel="noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <title> LinkedIn </title>
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                    </svg>
+                                </a>
+                                <a href="https://codepen.io/nadirroc033" aria-label="Codepen" target="_blank"
+                                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="30"
+                                        height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-codepen">
+                                        <title>CodePen</title>
+                                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                                        <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                        <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                                        <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                                        <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="screen-body-item">
+                            <h1>Naam:</h1>
+                            <p>Nadir Aabid</p>
+                            <h1>E-mail:</h1>
+                            <p>586246@edu.rocmn.nl</p>
+                            <h1>Tel:</h1>
+                            <p>+31 6 81563156</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
