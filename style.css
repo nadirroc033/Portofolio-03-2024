@@ -232,10 +232,6 @@ p {
     padding: 20px 0;
 }
 
-#hello {
-    font-size: min(4vw, 25px);
-    color: var(--color-ivory);
-}
 
 .column__left p {
     font-size: min(6vw, 25px);
@@ -364,7 +360,7 @@ p {
 
     box-sizing: border-box;
 
-    overflow: auto;
+    /* overflow: auto; */
     display: flex;
     scroll-snap-type: x mandatory;
 }
@@ -380,22 +376,17 @@ p {
 
 .item {
     background-color: var(--color-light-green);
-
     width: 95%;
-    max-width: 350px;
+    max-width: 265px;
     box-sizing: border-box;
     margin-right: 2%;
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 0 5%;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-
-
     flex-shrink: 0;
     scroll-snap-align: start;
-
     overflow-y: hidden;
-
     transition: all 0.1s ease-in;
 }
 
