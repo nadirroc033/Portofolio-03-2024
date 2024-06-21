@@ -282,7 +282,7 @@ p {
     display: block;
     margin: auto;
     text-align: center;
-    padding-top: 2vh;
+    padding-top: 0vh;
 }
 
 .picture-container {
@@ -676,5 +676,106 @@ svg {
 
     .screen-body-item {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Project Section */
+    .carousel_container {
+        height: auto;
+        /* Remove fixed height */
+        min-height: auto;
+        /* Remove fixed min-height */
+    }
+
+    .carousel {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+
+    .item {
+        margin-bottom: 20px;
+        /* Add margin between items */
+    }
+
+    .project_skills ul {
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjust grid columns */
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .item_content {
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .item_title {
+        height: auto;
+        /* Remove fixed height */
+    }
+
+    .item p {
+        margin-top: 10px;
+        /* Add spacing between project descriptions */
+        color: var(--color-ivory);
+        /* Ensure text is visible */
+    }
+
+    /* Adjust other sections as needed */
+    .about-me,
+    .contact_section {
+        padding: 20px;
+        /* Add padding to sections */
+    }
+
+    .hero__section {
+        height: auto;
+        /* Remove fixed height */
+        min-height: auto;
+        /* Remove fixed min-height */
+        padding: 20px 0;
+        /* Add padding */
+    }
+
+    .hero__wrapper {
+        flex-direction: column;
+        /* Stack columns vertically */
+        align-items: center;
+        /* Center content */
+    }
+
+    .column__left {
+        padding: 0;
+        /* Remove padding */
+        text-align: center;
+        /* Center text */
+    }
+
+    .column__left h1 {
+        font-size: 28px;
+        /* Adjust font size */
+    }
+
+    .column__left p {
+        font-size: 16px;
+        /* Adjust font size */
+        line-height: 1.5;
+        /* Adjust line height */
+    }
+
+    .picture-container::after {
+        width: 100%;
+        /* Adjust width */
+        height: auto;
+        /* Adjust height */
+    }
+
+    .portrait {
+        width: 100%;
+        /* Adjust width */
+        max-width: 200px;
+        /* Add max-width */
     }
 }
